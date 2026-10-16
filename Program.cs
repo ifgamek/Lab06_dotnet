@@ -96,31 +96,31 @@
 // // //     }
 // // // }
 
-// // Итоговое задание
-// // int random_c = 32;
-// // int a;
-// // int count = 0;
-// // do
-// // {
-// //     a = Convert.ToInt32(Console.ReadLine());
-// //     if (a > random_c)
-// //     {
-// //         Console.Write("меньше\n");
-// //     }
-// //     if (a < random_c)
-// //     {
-// //         Console.Write("больше\n");
-// //     }
-// //     if (a == random_c)
-// //     {
-// //         Console.Write($"победа! попыток {count}\n");
-// //         return;
-// //     }
-// //     count++;
-// // }
-// // while (count < 5);
-// // Console.WriteLine("число попыток превысило 5\n");
-// // return;
+//Итоговое задание
+int random_c = 32;
+int a;
+int count = 0;
+do
+{
+    a = Convert.ToInt32(Console.ReadLine());
+    if (a > random_c)
+    {
+        Console.Write("меньше\n");
+    }
+    if (a < random_c)
+    {
+        Console.Write("больше\n");
+    }
+    if (a == random_c)
+    {
+        Console.Write($"победа! попыток {count}\n");
+        return;
+    }
+    count++;
+}
+while (count < 5);
+Console.WriteLine("число попыток превысило 5\n");
+return;
 
 // //доп задание 
 // Console.WriteLine("Введите число");
