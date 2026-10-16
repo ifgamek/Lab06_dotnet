@@ -1,123 +1,138 @@
-﻿// // // // // // // // // задние 1.1
+﻿// // // // // // // // // // задние 1.1
 
-// // // // // // // // for (int i = 10; i >= 1; i--)
+// // // // // // // // // for (int i = 10; i >= 1; i--)
 
+// // // // // // // // // {
+// // // // // // // // //     Console.Write(i + " ");
+// // // // // // // // // }
+
+// // // // // // // // //задание 1.2
+// // // // // // // // for (int i = 2; i <= 50; i += 2)
 // // // // // // // // {
 // // // // // // // //     Console.Write(i + " ");
 // // // // // // // // }
 
-// // // // // // // //задание 1.2
-// // // // // // // for (int i = 2; i <= 50; i += 2)
+
+
+// // // // // // // //задание 2
+// // // // // // // int sum = 0;
+// // // // // // // int count_7 = 0;
+// // // // // // // for (int i = 1; i <= 100; i++)
 // // // // // // // {
-// // // // // // //     Console.Write(i + " ");
+// // // // // // //     if (i % 3 == 0)
+// // // // // // //     {
+// // // // // // //         sum += i;
+// // // // // // //     }
+// // // // // // //     if (i % 7 == 0)
+// // // // // // //     {
+// // // // // // //         count_7++;
+// // // // // // //     }
 // // // // // // // }
+// // // // // // // Console.WriteLine($"сумма чисел кратных 3 - {sum} кол-во чисел которые делятся на 7 -  {count_7}");
 
 
 
-// // // // // // //задание 2
-// // // // // // int sum = 0;
-// // // // // // int count_7 = 0;
-// // // // // // for (int i = 1; i <= 100; i++)
+// // // // // // //задание 3
+// // // // // // using System.Globalization;
+
+// // // // // // int number = Convert.ToInt32(Console.ReadLine());
+// // // // // // int count_pl = 0;
+// // // // // // int count_mn = 0;
+// // // // // // while (number != 0)
 // // // // // // {
-// // // // // //     if (i % 3 == 0)
+// // // // // //     if (number > 0)
 // // // // // //     {
-// // // // // //         sum += i;
+// // // // // //         count_pl++;
 // // // // // //     }
-// // // // // //     if (i % 7 == 0)
+// // // // // //     if (number < 0)
 // // // // // //     {
-// // // // // //         count_7++;
+// // // // // //         count_mn++;
 // // // // // //     }
+// // // // // //     number = Convert.ToInt32(Console.ReadLine());
+
 // // // // // // }
-// // // // // // Console.WriteLine($"сумма чисел кратных 3 - {sum} кол-во чисел которые делятся на 7 -  {count_7}");
+// // // // // // Console.WriteLine($"количество положительных чисел  {count_pl} количество отрицательных чисел {count_mn}");
 
 
 
-// // // // // //задание 3
-// // // // // using System.Globalization;
+// // // // // //задние 4
+// // // // // string password;
+// // // // // int count = 0;
 
-// // // // // int number = Convert.ToInt32(Console.ReadLine());
-// // // // // int count_pl = 0;
-// // // // // int count_mn = 0;
-// // // // // while (number != 0)
+// // // // // do
 // // // // // {
-// // // // //     if (number > 0)
+// // // // //     Console.Write("введите пароль\n");
+// // // // //     password = Console.ReadLine();
+// // // // //     if (password == "qwerty")
 // // // // //     {
-// // // // //         count_pl++;
+// // // // //         Console.Write("Доступ Разрешен");
+// // // // //         return;
 // // // // //     }
-// // // // //     if (number < 0)
-// // // // //     {
-// // // // //         count_mn++;
-// // // // //     }
-// // // // //     number = Convert.ToInt32(Console.ReadLine());
+// // // // //     count += 1;
+
 
 // // // // // }
-// // // // // Console.WriteLine($"количество положительных чисел  {count_pl} количество отрицательных чисел {count_mn}");
+// // // // // while (password != "qwerty" && count < 3);
+// // // // // Console.WriteLine("Количество попыток превысило 3");
 
 
 
-// // // // //задние 4
-// // // // string password;
-// // // // int count = 0;
-
-// // // // do
+// // // // // // задание 5
+// // // // Console.WriteLine("Введите число от 1 до 10");
+// // // // int n = Convert.ToInt32(Console.ReadLine());
+// // // // for (int i = 1; i <= 10; i++)
 // // // // {
-// // // //     Console.Write("введите пароль\n");
-// // // //     password = Console.ReadLine();
-// // // //     if (password == "qwerty")
-// // // //     {
-// // // //         Console.Write("Доступ Разрешен");
-// // // //         return;
-// // // //     }
-// // // //     count += 1;
-
-
+// // // //     Console.Write($"{n} x {i} = {n * i}\n");
 // // // // }
-// // // // while (password != "qwerty" && count < 3);
-// // // // Console.WriteLine("Количество попыток превысило 3");
 
+// // // // задание 6
 
-
-// // // // // задание 5
-// // // Console.WriteLine("Введите число от 1 до 10");
-// // // int n = Convert.ToInt32(Console.ReadLine());
-// // // for (int i = 1; i <= 10; i++)
+// // // for (int i = 1; i <= 30; i++)
 // // // {
-// // //     Console.Write($"{n} x {i} = {n * i}\n");
+// // //     if (i % 3 == 0) continue;
+// // //     if (i % 10 == 0 && i > 20)
+// // //     {
+// // //         break;
+// // //     }
 // // // }
 
-// // // задание 6
-
-// // for (int i = 1; i <= 30; i++)
+// // Итоговое задание
+// // int random_c = 32;
+// // int a;
+// // int count = 0;
+// // do
 // // {
-// //     if (i % 3 == 0) continue;
-// //     if (i % 10 == 0 && i > 20)
+// //     a = Convert.ToInt32(Console.ReadLine());
+// //     if (a > random_c)
 // //     {
-// //         break;
+// //         Console.Write("меньше\n");
 // //     }
+// //     if (a < random_c)
+// //     {
+// //         Console.Write("больше\n");
+// //     }
+// //     if (a == random_c)
+// //     {
+// //         Console.Write($"победа! попыток {count}\n");
+// //         return;
+// //     }
+// //     count++;
 // // }
+// // while (count < 5);
+// // Console.WriteLine("число попыток превысило 5\n");
+// // return;
 
-// Итоговое задание
-// int random_c = 32;
-// int a;
+// //доп задание 
+// Console.WriteLine("Введите число");
+// int a = Convert.ToInt32(Console.ReadLine());
 // int count = 0;
-// do
+// int sum = 0;
+// while (a > 0)
 // {
-//     a = Convert.ToInt32(Console.ReadLine());
-//     if (a > random_c)
-//     {
-//         Console.Write("меньше\n");
-//     }
-//     if (a < random_c)
-//     {
-//         Console.Write("больше\n");
-//     }
-//     if (a == random_c)
-//     {
-//         Console.Write($"победа! попыток {count}\n");
-//         return;
-//     }
+//     int s = a % 10;
+//     sum += s;
 //     count++;
+//     a = a / 10;
 // }
-// while (count < 5);
-// Console.WriteLine("число попыток превысило 5\n");
-// return;
+
+// Console.WriteLine($"количество чисел в вашей цифре {count}  сумма этих цифр {sum}");
